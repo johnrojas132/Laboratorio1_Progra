@@ -10,7 +10,7 @@ package lab_u2_herencia_github_progra;
  */
 public abstract class Material {
     // Atributos
-    private final int id;                
+    private final int id;
     private String titulo;               
     private boolean disponible;          
     private static int contadorMateriales = 0; 
