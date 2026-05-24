@@ -11,13 +11,13 @@ package lab_u2_herencia_github_progra;
 public class Libro extends Material {
     private String autor;
     private int cantidadPaginas;
-    private Genero genero;
     
-    public Libro(int id, String titulo, String autor, int cantidadPaginas, Genero genero){
+    
+    public Libro(int id, String titulo, String autor, int cantidadPaginas){
         super(id, titulo);
         this.autor = autor;
         this.cantidadPaginas = cantidadPaginas;
-        this.genero = genero;
+        
     }
     @Override
     public void mostrarInfo() {
@@ -27,7 +27,7 @@ public class Libro extends Material {
         System.out.println("Disponible: " + isDisponible());
         System.out.println("Autor: " + autor);
         System.out.println("Páginas: " + cantidadPaginas);
-        System.out.println("Género: " + genero);
+        
     }
     
 }

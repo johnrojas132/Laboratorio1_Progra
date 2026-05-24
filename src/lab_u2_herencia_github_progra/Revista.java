@@ -26,4 +26,3 @@ public class Revista extends Material {
         System.out.println("Mes: " + mesPublicacion);
     }
 }
-
