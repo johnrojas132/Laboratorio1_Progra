@@ -9,32 +9,36 @@ package lab_u2_herencia_github_progra;
  * @author Chess
  */
 public class Libro extends Material {
-    // Atributos propios del libro
+
+    // Atributos
     private String autor;
     private int cantidadPaginas;
-    
-     // Constructor
-    public Libro(int id, String titulo,
-            String autor, int cantidadPaginas) {
-     // Llama constructor de Material
+    private Genero genero;
+
+    // Constructor
+    public Libro(int id,
+                 String titulo,
+                 String autor,
+                 int cantidadPaginas,
+                 Genero genero) {
+
         super(id, titulo);
 
         this.autor = autor;
         this.cantidadPaginas = cantidadPaginas;
+        this.genero = genero;
     }
-    // Implementacion del metodo abstracto
+
+    // Metodo sobrescrito
     @Override
     public void mostrarInfo() {
 
-        System.out.println("---- LIBRO ----");
-
+        System.out.println("===== LIBRO =====");
         System.out.println("ID: " + getId());
         System.out.println("Titulo: " + getTitulo());
         System.out.println("Disponible: " + isDisponible());
-        // Datos propios del libro
         System.out.println("Autor: " + autor);
-        System.out.println("Paginas: " + cantidadPaginas);
+        System.out.println("Cantidad de paginas: " + cantidadPaginas);
+        System.out.println("Genero: " + genero);
     }
-    
 }
-

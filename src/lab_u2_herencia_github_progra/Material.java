@@ -9,23 +9,29 @@ package lab_u2_herencia_github_progra;
  * @author Usuario
  */
 public abstract class Material {
+
     // Atributos
     private final int id;
-    private String titulo;               
-    private boolean disponible;          
-    private static int contadorMateriales = 0; 
+    private String titulo;
+    private boolean disponible;
+    private static int contadorMateriales = 0;
 
     // Constructor
     public Material(int id, String titulo) {
+
         if (titulo == null || titulo.isEmpty()) {
-            throw new IllegalArgumentException("El titulo no puede estar vacio ");
+
+            throw new IllegalArgumentException("El titulo no puede estar vacio");
         }
+
         this.id = id;
         this.titulo = titulo;
-        this.disponible = true; 
+        this.disponible = true;
+
         contadorMateriales++;
     }
 
+    // Getters y Setters
     public int getId() {
         return id;
     }
@@ -35,9 +41,12 @@ public abstract class Material {
     }
 
     public void setTitulo(String titulo) {
+
         if (titulo == null || titulo.isEmpty()) {
-            throw new IllegalArgumentException("El titulo no puede estar vacio ");
+
+            throw new IllegalArgumentException("El titulo no puede estar vacio");
         }
+
         this.titulo = titulo;
     }
 
@@ -45,28 +54,40 @@ public abstract class Material {
         return disponible;
     }
 
-    // prestamo y devolucion
+    // Metodo prestar
     public void prestar() throws MaterialNoDisponibleException {
+
         if (!disponible) {
-            throw new MaterialNoDisponibleException("El material ya esta prestado ");
+
+            throw new MaterialNoDisponibleException(
+                    "El material ya esta prestado");
         }
+
         disponible = false;
-        System.out.println("Material prestado correctamente ");
+
+        System.out.println("Material prestado correctamente");
     }
 
+    // Metodo devolver
     public void devolver() throws MaterialNoDisponibleException {
+
         if (disponible) {
-            throw new MaterialNoDisponibleException("El material ya esta  disponible");
+
+            throw new MaterialNoDisponibleException(
+                    "El material ya esta disponible");
         }
+
         disponible = true;
-        System.out.println("Material devuelto correctamente ");
+
+        System.out.println("Material devuelto correctamente");
     }
 
-   
+    // Metodo abstracto
     public abstract void mostrarInfo();
 
-    //para contar materiales
+    // Metodo static para contador
     public static int getContadorMateriales() {
+
         return contadorMateriales;
     }
 }
