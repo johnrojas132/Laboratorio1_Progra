@@ -1,0 +1,81 @@
+LAB_U2_Herencia_GitHub
+https://github.com/johnrojas132/Laboratorio1_Progra.git
+
+Integrantes
+
+Ivan Fernando Esquivel Hernández
+John Rojas Alvarado
+Ethan Alexandro Naranjo Solís
+ZUÑIGA ARAYA CRISTOPHER ANDREY
+
+Introduccion
+
+El presente proyecto consiste en el desarrollo de un sistema de biblioteca en Java, utilizando
+programación orientada a objetos. 
+El sistema permite administrar diferentes tipos de materiales,
+como libros, revistas, tesis y audiolibros, aplicando conceptos vistos en clase relacionados con
+herencia y reutilización de código de los integrantes anteriores.
+Además, se trabajó de manera colaborativa mediante GitHub, utilizando ramas, commits y pull
+requests para organizar el desarrollo del proyecto.
+
+Objetivo del proyecto
+
+Aplicar los conceptos de clases, objetos, herencia, polimorfismo, encapsulamiento y manejo de
+colecciones en Java mediante la creación de un sistema funcional de biblioteca.
+
+Funcionalidades principales
+El sistema desarrollado permite realizar las siguientes acciones:
+• Registrar libros
+• Registrar revistas
+• Registrar tesis
+• Registrar audiolibros
+• Mostrar todos los materiales almacenados
+• Buscar materiales por ID
+• Prestar materiales disponibles
+• Devolver materiales prestados
+• Mostrar la cantidad total de materiales registrados
+
+Clases utilizadas
+El proyecto está compuesto por varias clases principales:
+
+Material
+Clase abstracta principal del sistema. Contiene atributos y métodos generales compartidos por
+todos los materiales.
+
+Libro
+Subclase que representa libros dentro de la biblioteca.
+
+Revista
+Subclase utilizada para almacenar información de revistas.
+
+Tesis
+Subclase utilizada para registrar tesis universitarias.
+
+Audiolibro
+Subclase utilizada para manejar audiolibros.
+
+Biblioteca
+Clase encargada de administrar todos los materiales mediante un ArrayList.
+
+Main
+Clase principal donde se ejecuta el menú en consola y se prueban las funcionalidades del sistema.
+
+Genero
+Enumeración utilizada para clasificar libros por genero.
+
+MaterialNoDisponibleException
+Excepción personalizada utilizada para controlar errores al prestar o devolver materiales.
+
+Conceptos aplicados
+Durante el desarrollo del proyecto se aplicaron las clases:
+• Clases y objetos
+• Herencia
+• Polimorfismo
+• Encapsulamiento
+• Clases abstractas
+• Constructores
+• Uso de super y this
+• Enumeraciones (enum)
+• Colecciones (ArrayList)
+• Miembros static y final
+• Manejo de excepciones con try-catch
